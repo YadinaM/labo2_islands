@@ -6,11 +6,21 @@ export default class Island{
         return{x,y};
     }
 
+    getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
     constructor(){
 
         document.querySelector(".add").addEventListener('click', (e) => {
             let div = document.createElement("div");
             div.classList.add("island");
+            div.style.backgroundColor = this.getRandomColor();
             document.body.appendChild(div);
             console.log(div);
 

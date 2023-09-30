@@ -13,26 +13,39 @@ body {
   justify-items: baseline;
 }
 
-a {
+p {
   margin-left: 2em;
   text-decoration: none;
   color: beige;
 }
 
-.add a{
+.add p{
   background-color: blueviolet;
   padding: 0.5em 0.8em;
   border-radius: 12px;
+  color: beige;
 }
 
-.save a{
+.save p{
   background-color: rgb(43, 156, 226);
   padding: 0.5em 0.8em;
   border-radius: 12px;
+  color: beige;
 }
 
-.load a{
+.load p{
   background-color: rgb(43, 226, 113);
   padding: 0.5em 0.8em;
   border-radius: 12px;
+  color: beige;
+}
+
+.island {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

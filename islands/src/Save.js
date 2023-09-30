@@ -13,8 +13,8 @@ export default class Save{
                 };
                 islandsData.push(islandData);
               });
-              localStorage.setItem("islands", JSON.stringify(islandsData));
-              console.log("Islands saved to localStorage:", islandsData);
+              localStorage.setItem("savedIslands", JSON.stringify(islandsData));
+              console.log(localStorage);
         })
     }
 }
